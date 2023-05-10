@@ -9,7 +9,7 @@ The storage facility built for this aspect is based on the ability of python to 
 The analysis are: 
 
 Instances or python objects created are converted to python data structure and stored in json file through serialization.<br>Instances --> pds--> json file (serialization)<br>In like manner, for easy retrieval system, the json strings stored are converted to python data structure and then to the instance or object through deserialization.<br>json file --> pds --> instances (Deserialization)<br>
-![server side](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230509%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230509T203438Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e3a1a90a70431308583112d6f3f407dd2589fa4784d6632d2fceacabb7e43869)
+![storage](https://hazelcast.com/wp-content/uploads/2021/12/serialization-deserialization-diagram-800x318-1.png)
 # Description of the command line interface (Cli)/ interpreter
 The command line interface is similar to the borne-again shell (Bash shell), However, it is laced with a limited number of commands solely for the purpose of the project (AirBnb_clone WebApp)<br>
 
