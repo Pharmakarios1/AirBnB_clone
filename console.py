@@ -8,6 +8,19 @@ class HBNBCommand(cmd.Cmd):
     
     prompt = '(hbnb)'
     
+    def do_create(self, arg):
+        """Creates a new instance of the command."""
+        pass
+    def do_quit(self):
+        return True
+        """Quits the command interpreter when called."""
+    def do_show(self, arg):
+        pass
+    def do_destroy(self, arg):
+        """Deletes an instance of the class."""
+        pass
+    def do_count(self, arg):
+        """counts the number of instances of the classs"""
     
     
     
