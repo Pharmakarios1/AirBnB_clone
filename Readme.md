@@ -8,7 +8,7 @@ The storage facility built for this aspect is based on the ability of python to 
 
 The analysis are: 
 
-Instances or python objects created are converted to python data structure and stored in json file through serialization.<br>Instances --> pds--> json file (serialization)<br>In like manner, for easy retrieval system, the json strings stored are converted to python data structure and then to the instance or object through deserialization.<br>json file --> pds --> instances (Deserialization)<br>
+Instances or python objects created are converted to python data structure and stored in json file through serialization.<br>Instances --> pds--> json file (serialization)<br>In like manner, for easy retrieval system, the json strings stored are converted to python data structure and then to the instance or object through deserialization.<br>json file --> pds --> instances (Deserialization)<hr>
 ![storage](https://hazelcast.com/wp-content/uploads/2021/12/serialization-deserialization-diagram-800x318-1.png)
 # Description of the command line interface (Cli)/ interpreter
 The command line interface is similar to the borne-again shell (Bash shell), However, it is laced with a limited number of commands solely for the purpose of the project (AirBnb_clone WebApp)<br>
@@ -22,7 +22,17 @@ The commands available are:<br>
     * destroy<br>
     * count<br>
 This command line interpreter  serves as the frontend of the web app where users can interact with the backend which was developed with python OOP programming.
-# what the commands do:
+
+# What’s a command interpreter?
+Do you remember the Shell? It’s exactly the same but limited to a specific use-case. In our case, we want to be able to manage the objects of our project:
+
+Create a new object (ex: a new User or a new Place)
+Retrieve an object from a file, a database etc…
+Do operations on objects (count, compute stats, etc…)
+Update attributes of an object
+Destroy an object<hr>
+
+        <h3>what the commands does:<h3>
     * create helps to create a new instance (A user may create a new account)
     * show commands may help to retrieve an object from a file, a database from the console
     * update commands helps to update attributes of an object stored.
