@@ -24,15 +24,15 @@ The commands available are:<br>
 This command line interpreter  serves as the frontend of the web app where users can interact with the backend which was developed with python OOP programming.
 
 # What’s a command interpreter?
-Do you remember the Shell? It’s exactly the same but limited to a specific use-case. In our case, we want to be able to manage the objects of our project:
+Do you remember the Shell? It’s exactly the same but limited to a specific use-case. In our case, we want to be able to manage the objects of our project:<br>
 
-Create a new object (ex: a new User or a new Place)
-Retrieve an object from a file, a database etc…
-Do operations on objects (count, compute stats, etc…)
-Update attributes of an object
+Create a new object (ex: a new User or a new Place)<br>
+Retrieve an object from a file, a database etc…<br>
+Do operations on objects (count, compute stats, etc…)<br>
+Update attributes of an object<br>
 Destroy an object<hr>
-
-        <h3>what the commands does:<h3>
+# Snippet of commands usage
+        
     * create helps to create a new instance (A user may create a new account)
     * show commands may help to retrieve an object from a file, a database from the console
     * update commands helps to update attributes of an object stored.
