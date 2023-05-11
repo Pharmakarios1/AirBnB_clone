@@ -155,4 +155,8 @@ Like most other commands, options like flags or plain text could be passed to th
     | **Usage** | **<class name\>.count()** |
 <hr>
 
-![Pharmakarios](https://avatars.githubusercontent.com/u/89057471?v=4)
+# pharmakarios1 (Blessed Akhigbe)
+![Pharmakarios1](https://avatars.githubusercontent.com/u/89057471?v=4)
+
+# nnejiobioma (Johnson Johnson)
+![nnejiobioma](https://avatars.githubusercontent.com/u/59613857?v=4)
