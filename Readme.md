@@ -45,7 +45,7 @@ Instructions below will help to get the program running on your local machine wi
 
 install by git cloning this repository<hr>
 
-        http://github.com/nnejiobioma/AirBnB_clone.git
+        http://github.com/pharmakarios1/AirBnB_clone.git
 
 After cloning, you should have a directory named AirBnB_clone on your local machine. Within the directory is contained all files that allow the program to run.
 
