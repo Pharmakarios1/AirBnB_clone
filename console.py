@@ -6,14 +6,12 @@ import cmd
 class HBNBCommand(cmd.Cmd):
     """Defines BaseClass HBNBCommand for the command interpreter"""
     
-    prompt = '(hbnb)'
+    prompt = "(hbnb)"
     
     def do_create(self, arg):
-        """Creates a new instance of the command."""
+        """Creates a new instance of the class."""
         pass
-    def do_quit(self):
-        return True
-        """Quits the command interpreter when called."""
+   
     def do_show(self, arg):
         pass
     def do_destroy(self, arg):
@@ -21,8 +19,27 @@ class HBNBCommand(cmd.Cmd):
         pass
     def do_count(self, arg):
         """counts the number of instances of the classs"""
+        pass
+    def do_update(self, arg):
+        """updates an instance of the class by adding attributes to it"""
+        pass
+    def do_all(self, arg):
+        """prints all instances of the class in string format"""
+        pass
+        
+    def do_quit(self):
+        return True
+        """Quits the command interpreter when called."""
+        
+        
+    def do_EOF(self, arg):
+        """The function takes care of the End of file"""
+        return True
     
-    
-    
+    def default(self, arg):
+        """Returns to default if nothing was specified"""
+        
+      
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
+
