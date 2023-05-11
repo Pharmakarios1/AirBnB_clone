@@ -2,6 +2,10 @@
 """Defines Modules for the entry point of the command interpreter"""
 
 import cmd
+import re
+import json
+from models import storage
+from models.base_model import BaseModel
 
 class HBNBCommand(cmd.Cmd):
     """Defines BaseClass HBNBCommand for the command interpreter"""
@@ -35,9 +39,13 @@ class HBNBCommand(cmd.Cmd):
     def do_EOF(self, arg):
         """The function takes care of the End of file"""
         return True
+    def do_emptyline(sefl):
+        """Function is inactive and does nothing when Enter is entered"""
+        pass
     
     def default(self, arg):
         """Returns to default if nothing was specified"""
+        
         
       
 if __name__ == '__main__':
