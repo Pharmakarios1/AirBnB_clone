@@ -128,31 +128,30 @@ Like most other commands, options like flags or plain text could be passed to th
 # Commands and usage: <hr>
 
         
-    |Command| Description |
-    |--|--|
-    | **quit or EOF** | Exits the program |
-    | **Usage** | By itself |
-    | **-----** | **-----** |
-    | **help** | Provides a text describing how to use a command.  |
-    | **Usage** | By itself --or-- **help <command\>** |
-    | **-----** | **-----** |
-    | **create** | Creates a new instance of a valid    `Class`, saves it (to the JSON file) and prints the `id`.  Valid classes are: BaseModel, User, State, City, Amenity, Place, Review. |
-    | **Usage** | **create <class name\>**|
-    | **-----** | **-----** |
-    | **show** | Prints the string representation of an instance based on the class name and `id`  |
-    | **Usage** | **show <class name\> <id\>** --or-- **<class name\>.show(<id\>)**|
-    | **-----** | **-----** |
-    | **destroy** | Deletes an instance based on the class name and `id` (saves the change into a JSON file).  |
-    | **Usage** | **destroy <class name\> <id\>** --or-- **<class name>.destroy(<id>)** |
-    | **-----** | **-----** |
-    | **all** | Prints all string representation of all instances based or not on the class name.  |
-    | **Usage** | By itself or **all <class name\>** --or-- **<class name\>.all()** |
-    | **-----** | **-----** |
-    | **update** | Updates an instance based on the class name and `id` by adding or updating attribute (saves the changes into a JSON file).  |
-    | **Usage** | **update <class name\> <id\> <attribute name\> "<attribute value\>"** ---or--- **<class name\>.update(<id\>, <attribute name\>, <attribute value\>)** --or-- **<class name\>.update(<id\>, <dictionary representation\>)**|
-    | **-----** | **-----** |
-    | **count** | Retrieve the number of instances of a class.  |
-    | **Usage** | **<class name\>.count()** |
+   Command | Example
+------- | -------
+Run the console | ```./console.py```
+Quit the console | ```(hbnb) quit```
+Display the help for a command | ```(hbnb) help <command>```
+Create an object (prints its id)| ```(hbnb) create <class>```
+Show an object | ```(hbnb) show <class> <id>``` or ```(hbnb) <class>.show(<id>)```
+Destroy an object | ```(hbnb) destroy <class> <id>``` or ```(hbnb) <class>.destroy(<id>)```
+Show all objects, or all instances of a class | ```(hbnb) all``` or ```(hbnb) all <class>```
+Update an attribute of an object | ```(hbnb) update <class> <id> <attribute name> "<attribute value>"``` or ```(hbnb) <class>.update(<id>, <attribute name>, "<attribute value>")```
+
+# Unittests 
+Unittests for the for this project are defined in the [tests](./tests)
+directory. To run the entire test suite simultaneously, execute the following command:
+
+```
+$ python3 unittest -m discover tests
+```
+
+Alternatively, you can specify a single test file to run at a time:
+
+```
+$ python3 unittest -m tests/test_console.py
+```
 <hr>
 
 # pharmakarios1 (Blessed Akhigbe)
