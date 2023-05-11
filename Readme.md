@@ -55,17 +55,17 @@ After cloning, you should have a directory named AirBnB_clone on your local mach
 3. console.py: This is the main python executable file that provides the environment from which commands are issued to the console to effect a certain action.
 4. models: is a sub-directory containing a host of files:
 
-----> models/engine/file_storage.py: This is a class that serializes objects to a json file and in-turn deserializes them back into object instances when commands are issued.
----->models/__init__.py: This is a magic file. it is very essential for the build up of the FileStorage.
----->models/base_model.py: Class that defines all common attributes and methods for other classes
----->models/user.py: This file is the User class that inherits from the BaseModel.
----->models/state.py: This file is the state class that inherits from the BaseModel.
----->models/city.py: This file is the city class that inherits from the BaseModel.
----->models/amenity.py: This file is the amenity class that inherits from the BaseModel.
----->models/place.py: This file is the place class that inherits from the BaseModel.
+----> models/engine/file_storage.py: This is a class that serializes objects to a json file and in-turn deserializes them back into object instances when commands are issued.<br>
+---->models/__init__.py: This is a magic file. it is very essential for the build up of the FileStorage.<br>
+---->models/base_model.py: Class that defines all common attributes and methods for other classes<br>
+---->models/user.py: This file is the User class that inherits from the BaseModel.<br>
+---->models/state.py: This file is the state class that inherits from the BaseModel.<br>
+---->models/city.py: This file is the city class that inherits from the BaseModel.<br>
+---->models/amenity.py: This file is the amenity class that inherits from the BaseModel.<br>
+---->models/place.py: This file is the place class that inherits from the BaseModel.<br>
 ---->models/review.py: This file is the review class that inherits from the BaseModel.
 
-    <hr>
+<hr>
 # Execution:
 Usage is in two unique modes: 
         1. Interactive mode
@@ -118,10 +118,12 @@ On the other hand, to achieve same result, the command(s) will have to be piped 
 
 Like most other commands, options like flags or plain text could be passed to the console to execute the needed output. the console shell recognizes these options when a separated by a single space.
 
-        user@ubuntu:~/AirBnB$ ./console.py
+        user@Pharmakarios MINGW64 ~/Desktop/AirBnB_clone (main)
+        ./console.py
         (hbnb) create BaseModel
         32d2ff7a-96c1-a11f-80b3-63732d6e7883
-        user@ubuntu:~/AirBnB$ ./console.py
+       user@Pharmakarios MINGW64 ~/Desktop/AirBnB_clone (main)
+       ./console.py
 
 # Commands and usage: <hr>
 
@@ -151,3 +153,6 @@ Like most other commands, options like flags or plain text could be passed to th
     | **-----** | **-----** |
     | **count** | Retrieve the number of instances of a class.  |
     | **Usage** | **<class name\>.count()** |
+<hr>
+
+![Pharmakarios](https://avatars.githubusercontent.com/u/89057471?v=4)
