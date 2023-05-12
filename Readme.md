@@ -66,10 +66,11 @@ After cloning, you should have a directory named AirBnB_clone on your local mach
 ---->models/review.py: This file is the review class that inherits from the BaseModel.
 
 <hr>
+
 # Execution:
-Usage is in two unique modes: 
-        1. Interactive mode
-        2. Non-interactive mode
+Usage is in two unique modes:<br> 
+        1. Interactive mode <br>
+        2. Non-interactive mode <br>
 
 # Interactive mode
 the console will display a prompt (hbnb) indicating that the user can write and execute a command. After the command is run, the prompt will appear again a wait for a new command. This can go indefinitely as long as the user does not exit the program.
@@ -138,6 +139,16 @@ Show an object | ```(hbnb) show <class> <id>``` or ```(hbnb) <class>.show(<id>)`
 Destroy an object | ```(hbnb) destroy <class> <id>``` or ```(hbnb) <class>.destroy(<id>)```
 Show all objects, or all instances of a class | ```(hbnb) all``` or ```(hbnb) all <class>```
 Update an attribute of an object | ```(hbnb) update <class> <id> <attribute name> "<attribute value>"``` or ```(hbnb) <class>.update(<id>, <attribute name>, "<attribute value>")```
+
+# help command
+This command is built inside the cmd module and it helps to list all available commands:
+           Documented commands (type help <topic>):
+========================================
+EOF  count  create  destroy  help
+
+Undocumented commands:
+======================
+quit  show     
 
 # Unittests 
 Unittests for the for this project are defined in the [tests](./tests)
