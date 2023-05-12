@@ -39,6 +39,7 @@ class HBNBCommand(cmd.Cmd):
     def do_EOF(self, arg):
         """The function takes care of the End of file"""
         return True
+    
     def do_emptyline(sefl):
         """Function is inactive and does nothing when Enter is entered"""
         pass
