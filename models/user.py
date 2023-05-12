@@ -1,4 +1,7 @@
 #!/usr?bin/python3
+
+from models.base_model import BaseModel
+
 """
 This is used to create a user account on the program which is 
 then stored in Storage_file
