@@ -4,11 +4,11 @@ from models.base_model import BaseModel
 
 """BaseModel for state"""
 
+
 class State(BaseModel):
-	"""
-	state class.
-	
-	Attribute include:
-	name: string - empty string
-	"""
-	name = ""
+    """
+    state class.
+    Attribute include:
+    name: string - empty string
+    """
+    name = ""
