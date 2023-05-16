@@ -1,53 +1,49 @@
 #!/usr/bin/python3
-
-"""
-This is a base class for other models.
-It provides funtionality that can be used by other models
-In this instance BaseModel class id defined
-the will be called from the init function and other functions
-"""
+"""Defines the BaseModel class."""
+import models
 from uuid import uuid4
 from datetime import datetime
 
 
 class BaseModel:
-    """
-        This is is the BaseModel of the project.
-        which other class and instances will read from
-        """
+    """Represents the BaseModel of the HBnB project."""
+
     def __init__(self, *args, **kwargs):
-        """This helps to initialize BaseModel."""
-        if kwargs:
-            for key, value in kwargs.items():
-                if key == 'created_at' or key == 'updated_at':
-                    value = datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%f')
-                setattr(self, key, value)
+        """Initialize a new BaseModel.
+        Args:
+            *args (any): Unused.
+            **kwargs (dict): Key/value pairs of attributes.
+        """
+        tform = "%Y-%m-%dT%H:%M:%S.%f"
+        self.id = str(uuid4())
+        self.created_at = datetime.today()
+        self.updated_at = datetime.today()
+        if len(kwargs) != 0:
+            for k, v in kwargs.items():
+                if k == "created_at" or k == "updated_at":
+                    self.__dict__[k] = datetime.strptime(v, tform)
+                else:
+                    self.__dict__[k] = v
         else:
-    self.id = str(uuid4())
-    self.created_at = datetime.now()
-    self.updated_at = datetime.now()
-    models.storage.new(self)
+            models.storage.new(self)
 
     def save(self):
-        """
-        This helps to update the current time of the base model
-        datetime.now is used instead of datetime.today.
-        reason being that the now will give the current
-        date as of the date of execution.
-        """
-    self.update_at = datetime.now()
-    models.storage.save()
+        """Update updated_at with the current datetime."""
+        self.updated_at = datetime.today()
+        models.storage.save()
 
     def to_dict(self):
+        """Return the dictionary of the BaseModel instance.
+        Includes the key/value pair __class__ representing
+        the class name of the object.
         """
-        This returns the dictionary of Base Model in the project
-        """
-        d = self.__dict__.copy()
-        d['__class__'] = self.__class__.__name__
-        d['created_at'] = self.created_at.isoformat()
-        d['updated_at'] = self.updated_at.isoformat()
-        return d
+        rdict = self.__dict__.copy()
+        rdict["created_at"] = self.created_at.isoformat()
+        rdict["updated_at"] = self.updated_at.isoformat()
+        rdict["__class__"] = self.__class__.__name__
+        return rdict
 
     def __str__(self):
-        """print representation of the BaseModel instance."""
-        return "[{}] ({}) {}".format(self.__class__.__name__,self.id, self.to_dict())
+        """Return the print/str representation of the BaseModel instance."""
+        clname = self.__class__.__name__
+        return "[{}] ({}) {}".format(clname, self.id, self.__dict__)
